@@ -1,0 +1,62 @@
+#capitalize,upper,lower,swapcase,stratswith,endswith,count,find,index,strip,split,join,format,replace
+
+
+s = 'Ramesh Suresh Barik Dash Pani Guru'
+s.split()
+['Ramesh', 'Suresh', 'Barik', 'Dash', 'Pani', 'Guru']
+s = 'Ramesh SureshBarik Dash PaniGuru'
+s.split()
+['Ramesh', 'SureshBarik', 'Dash', 'PaniGuru']
+s = 'Ramesh Suresh{}Barik Dash Pani{}Guru'.format('-','/')
+s
+'Ramesh Suresh-Barik Dash Pani/Guru'
+s = 'Ramesh Suresh{}Barik Dash Pani{}Guru'.format(' ',' ')
+s
+'Ramesh Suresh Barik Dash Pani Guru'
+s.split()
+['Ramesh', 'Suresh', 'Barik', 'Dash', 'Pani', 'Guru']
+
+========================= RESTART: C:/Python3.11.3/cc.py =========================
+Enetr your age26
+26
+
+========================= RESTART: C:/Python3.11.3/cc.py =========================
+Enetr your age26
+age is :- 26
+
+
+#replace:-
+
+
+s = 'Jello All'
+s.replace('J','H')
+'Hello All'
+
+s = 'Jello Jacky'
+s.replace('J','H')
+'Hello Hacky'
+s = 'Jello Jacky'
+s.replace('Jello','Hello')
+'Hello Jacky'
+
+s = 'ruchiraa'
+s.index('aa')+1
+7
+s = 'Ramesh Suresh{}Barik Dash Pani{}Guru'.format(' ')
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    s = 'Ramesh Suresh{}Barik Dash Pani{}Guru'.format(' ')
+IndexError: Replacement index 1 out of range for positional args tuple
+
+
+#Reverse a string with the help of slicing. ex:- QWERTY output:- YTREWQ
+#Check string last char ends in / or not.
+#'Ram Chandra GovidaPrabhakr SwainKarnam SekharChandreNayak' split this string in a proper way all words are separate with space.
+
+#After split the string, then again join it back in a complete string.
+
+
+user = int(input('Enetr your age'))
+
+dob = f'age is :- {user}'
+print(dob)

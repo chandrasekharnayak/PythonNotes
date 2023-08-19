@@ -1,0 +1,67 @@
+
+Nested Function Ex:-
+
+def outer():
+    print('Outer function exceued')
+    def inner():
+        print('Inner function excueted')
+    inner()
+    print('inner function completed')
+    print('outer function completed')
+
+
+outer()
+
+
+
+def outer(a,b):
+    add = a+b
+    print(add)
+    def inner(n):
+        squre = n*n
+        print(squre)
+    inner(add)
+outer(10,20)
+
+
+def add_con(a,b):
+    add = a+b
+    print(type(add))
+    def inner(add):
+        if type(add) ==int:
+            cube = add**3
+            print(cube)
+        elif type(add) == str:
+            squre = add*2
+            print(squre)
+    inner(add)
+
+add_con(10,20)
+add_con('i','me')
+
+
+
+def check(li):
+    int_add = 0
+    float_sub = 0
+    for i in li:
+        if type(i) == int:
+            int_add = int_add+i
+        elif type(i) == float:
+            float_sub = float_sub-i
+
+    def result(n):
+        if type(n)==int:
+            squre = n*n
+            print('int',squre)
+        elif type(n)== float:
+            cube = n**3
+            print('float',cube)
+    result(int_add)
+    result(float_sub)
+
+li = [76,78,8,9,67.89,86.90,46.87]
+check(li)
+
+a = ''
+a = str()
